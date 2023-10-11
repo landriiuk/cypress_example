@@ -4,7 +4,7 @@
   "description": "It is a test project to show my skills",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy_headless": "npx cypress run"
   },
   "author": "Liubov Andriiuk",
   "license": "ISC",

@@ -1,0 +1,23 @@
+name: Run Cypress Tests on CI
+on:
+  push:
+      branches:
+      - "main"
+  workflow_dispatch:
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    env:
+      USERNAME: ${{ secrets.CYPRESS_USERNAME }}
+      PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run my tests
+        uses: cypress-io/github-action@v6
+        with:
+          command:  npm run cy_headless
