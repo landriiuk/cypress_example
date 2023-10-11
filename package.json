@@ -1,0 +1,15 @@
+{
+  "name": "cypress_example",
+  "version": "1.0.0",
+  "description": "It is a test project to show my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liubov Andriiuk",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.3.0",
+    "dotenv": "^16.3.1"
+  }
+}
