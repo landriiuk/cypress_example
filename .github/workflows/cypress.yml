@@ -1,7 +1,7 @@
 name: Run Cypress Tests on CI
 on:
   push:
-      branches:
+    branches:
       - "main"
   workflow_dispatch:
 jobs:
@@ -20,4 +20,4 @@ jobs:
       - name: Run my tests
         uses: cypress-io/github-action@v6
         with:
-          command:  npm run cy_headless
+          command: npm run cy_headless
