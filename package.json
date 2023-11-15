@@ -9,6 +9,7 @@
   "author": "Liubov Andriiuk",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "cypress": "^13.3.0",
     "dotenv": "^16.3.1"
   }

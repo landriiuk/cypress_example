@@ -1,7 +1,7 @@
 export class LoginPage {
 
     #loginSelectors = {
-        usernameInput: (() => cy.get('[name="username"]')),
+        usernameInput: (() => cy.get('[name="username"]', { timeout: 100500 })),
         passwordInput: (() => cy.get('[name="password"]')),
         loginButton: (() => cy.get('[type="submit"]')),
     }
