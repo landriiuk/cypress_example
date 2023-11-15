@@ -1,4 +1,5 @@
 import { faker } from '@faker-js/faker';
+import { getRandomString } from '../modules/helpers';
 
 const url = Object.freeze({
     dashboard: '/web/index.php/dashboard/index',
@@ -6,10 +7,6 @@ const url = Object.freeze({
     admin_view_users: '/web/index.php/admin/viewSystemUsers',
 });
 
-function getRandomString(...options) {
-    const randomIndex = Math.floor(Math.random() * options.length);
-    return options[randomIndex];
-}
 const validUserData = Object.freeze({
     role: getRandomString("Admin", "SSE"),
     status: getRandomString("Enabled", "Disabled"),
