@@ -4,7 +4,8 @@
   "description": "It is a test project to show my skills",
   "main": "index.js",
   "scripts": {
-    "cy_headless": "npx cypress run"
+    "cy_headless": "npx cypress run",
+    "prettier": "npx prettier . --write"
   },
   "author": "Liubov Andriiuk",
   "license": "ISC",
@@ -12,5 +13,10 @@
     "cypress": "^13.3.0",
     "dotenv": "^16.3.1",
     "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.15.1"
   }
 }
